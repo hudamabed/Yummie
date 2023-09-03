@@ -66,6 +66,7 @@ extension OnboardingViewController {
         objects.append(OnboardingScreens.init(title: "Delicious Dishes", descriptions: "Experience a variety of amazing dishes from different cultures around the world.", image: "bgBurger"))
         objects.append(OnboardingScreens.init(title: "World-Class Chefs", descriptions: "Our dishes are prepared by only the best.", image: "bgHat"))
         objects.append(OnboardingScreens.init(title: "Instant World-Wide Delivery", descriptions: "Your orders will be delivered instantly irrespective of your location around the world.", image: "bgDelivery"))
+        pageControl.numberOfPages = objects.count 
     }
     
     func localized(){
