@@ -10,13 +10,11 @@ import UIKit
 
 extension String {
     
-    //conver the String to UIcolor
+//    conver the String to UIcolor
 //    var color_ : UIColor {
-//        return UIColor.init(hexString: self)
+//     return UIColor.init(hexString: self)
     
-    
-    
-    
+
     var color_ : UIColor {
         return UIColor.init(named : self) ?? UIColor.init(hexString: self)
         
@@ -44,6 +42,9 @@ extension String {
     
     var isValidValue: Bool{
         return !self.removeWhiteSpace_.isEmpty
+    }
+    var isURl: URL?{
+        return URL(string: self)
     }
 }
 
