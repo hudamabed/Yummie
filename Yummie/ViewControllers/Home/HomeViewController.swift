@@ -11,7 +11,14 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var foodCategoryCollectionView: UICollectionView!
     
-    var objects: [FoodCategory] = []
+    @IBOutlet weak var popularDishesCollectionView: UICollectionView!
+    
+    @IBOutlet weak var chefSpecialsCollectionView: UICollectionView!
+    
+    var foodCategory: [FoodCategory] = []
+    var popularDishes: [PopularDishes] = []
+    var chefSpecials: [FoodCategory] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -28,13 +35,37 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     func setupView(){
         foodCategoryCollectionView.registerXib(cell: FoodCategoryCollectionViewCell.self)
-        objects.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
-        objects.append(FoodCategory(id: "id2", foodImage: "bgBurger", foodName: "pizza"))
-        objects.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
-        objects.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
-        objects.append(FoodCategory(id: "id2", foodImage: "bgBurger", foodName: "pizza"))
-        objects.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+        popularDishesCollectionView.registerXib(cell: PopularDishesCollectionViewCell.self)
 
+        
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id2", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id2", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id2", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id2", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id2", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id2", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        foodCategory.append(FoodCategory(id: "id1", foodImage: "bgBurger", foodName: "pizza"))
+
+
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 309))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 309))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
     }
     
     func localized(){
@@ -52,27 +83,38 @@ extension HomeViewController {
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return objects.count
+        if collectionView == foodCategoryCollectionView {
+             return foodCategory.count
+        } else if collectionView == popularDishesCollectionView {
+             return popularDishes.count
+        } else {
+             return chefSpecials.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: FoodCategoryCollectionViewCell = foodCategoryCollectionView.dequeueReusableCell(withReuseIdentifier: FoodCategoryCollectionViewCell.id, for: indexPath) as! FoodCategoryCollectionViewCell
-        let object = self.objects[indexPath.row]
-        cell.object = object
-        cell.configureCell()
-        return cell
+        if collectionView == foodCategoryCollectionView {
+            let cell: FoodCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodCategoryCollectionViewCell.id, for: indexPath) as! FoodCategoryCollectionViewCell
+            let object = self.foodCategory[indexPath.row]
+            cell.object = object
+            cell.configureCell()
+            return cell
+        } else if collectionView == popularDishesCollectionView {
+            let cell: PopularDishesCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularDishesCollectionViewCell.id, for: indexPath) as! PopularDishesCollectionViewCell
+            let object = self.popularDishes[indexPath.row]
+            cell.object = object
+            cell.configureCell()
+            return cell
+        } else {
+            let cell: FoodCategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodCategoryCollectionViewCell.id, for: indexPath) as! FoodCategoryCollectionViewCell
+            let object = self.chefSpecials[indexPath.row]
+            cell.object = object
+            cell.configureCell()
+            return cell
+            
+        }
     }
 }
-//    extension HomeViewController: UICollectionViewDelegateFlowLayout {
-//        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout ,sizeForItemAt indexPath: IndexPath) -> CGSize {
-////            let width: CGFloat = (collectionView.frame.width - 10 )
-////            let hight: CGFloat = 644
-//            let size: CGSize = CGSize.init(width: collectionView.frame.width, height: collectionView.frame.height)
-//            return size
-//            
-//        }
-//    
-//    
-//}
+    
 
 

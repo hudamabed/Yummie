@@ -70,7 +70,7 @@
                                 <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                <color key="value" name="F9E293"/>
+                                <color key="value" name="FFFFFF"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                 <size key="value" width="1" height="1"/>
@@ -100,9 +100,6 @@
     <resources>
         <namedColor name="3D3C52">
             <color red="0.23899999260902405" green="0.23499999940395355" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="F9E293">
-            <color red="0.97600001096725464" green="0.88599997758865356" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FFFFFF">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
