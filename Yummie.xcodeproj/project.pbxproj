@@ -146,10 +146,10 @@
 		921E8DD02AA35D440025D52E /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				92F484552AA8D8D4009507BD /* Chef's Specials */,
-				92F484502AA8D8B6009507BD /* Popular Dishes */,
-				92FB58912AA60420001F69D0 /* Food Category */,
 				921E8DD22AA35D6C0025D52E /* Onboarding */,
+				92FB58912AA60420001F69D0 /* Food Category */,
+				92F484502AA8D8B6009507BD /* Popular Dishes */,
+				92F484552AA8D8D4009507BD /* Chef's Specials */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";

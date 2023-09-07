@@ -66,6 +66,9 @@ extension HomeViewController {
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
+        
+        
+        
     }
     
     func localized(){

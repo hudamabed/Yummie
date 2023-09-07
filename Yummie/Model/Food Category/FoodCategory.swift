@@ -8,9 +8,9 @@
 import UIKit
 
 class FoodCategory{
-    var id: String?
-    var foodImage: String?
-    var foodName: String?
+    let id: String?
+    let foodImage: String?
+    let foodName: String?
     
     init(id: String?, foodImage: String?, foodName: String?) {
         self.id = id
