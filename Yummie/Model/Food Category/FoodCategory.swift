@@ -18,3 +18,4 @@ class FoodCategory{
         self.foodName = foodName
     }
 }
+ 
