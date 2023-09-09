@@ -29,6 +29,7 @@
 		921E8DD52AA376690025D52E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921E8DD32AA376690025D52E /* OnboardingCollectionViewCell.swift */; };
 		921E8DD62AA376690025D52E /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921E8DD42AA376690025D52E /* OnboardingCollectionViewCell.xib */; };
 		921E8DDA2AA3BBE70025D52E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921E8DD92AA3BBE70025D52E /* HomeViewController.swift */; };
+		925329E22AACCFE800D4C479 /* DishDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925329E12AACCFE800D4C479 /* DishDetailsViewController.swift */; };
 		92821F932AA21429000D665D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92821F922AA21429000D665D /* AppDelegate.swift */; };
 		92821F952AA21429000D665D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92821F942AA21429000D665D /* SceneDelegate.swift */; };
 		92821F972AA21429000D665D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92821F962AA21429000D665D /* OnboardingViewController.swift */; };
@@ -68,6 +69,7 @@
 		921E8DD32AA376690025D52E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		921E8DD42AA376690025D52E /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		921E8DD92AA3BBE70025D52E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		925329E12AACCFE800D4C479 /* DishDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsViewController.swift; sourceTree = "<group>"; };
 		92821F8F2AA21429000D665D /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92821F922AA21429000D665D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92821F942AA21429000D665D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +198,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		925329E02AACCFB900D4C479 /* Dish Details */ = {
+			isa = PBXGroup;
+			children = (
+				925329E12AACCFE800D4C479 /* DishDetailsViewController.swift */,
+			);
+			path = "Dish Details";
+			sourceTree = "<group>";
+		};
 		92821F862AA21429000D665D = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +255,7 @@
 				921E8DCA2AA336A30025D52E /* MainNavigationViewController.swift */,
 				921E8DCC2AA337CB0025D52E /* Onboarding */,
 				921E8DD82AA3BBC10025D52E /* Home */,
+				925329E02AACCFB900D4C479 /* Dish Details */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -485,6 +496,7 @@
 				921E8DC22AA3362E0025D52E /* UIResponderEx.swift in Sources */,
 				92821F952AA21429000D665D /* SceneDelegate.swift in Sources */,
 				92FB58942AA60456001F69D0 /* FoodCategoryCollectionViewCell.swift in Sources */,
+				925329E22AACCFE800D4C479 /* DishDetailsViewController.swift in Sources */,
 				921E8DC82AA3362E0025D52E /* UIStringEx.swift in Sources */,
 				92F484582AA8D927009507BD /* ChefsSpecialsCollectionViewCell.swift in Sources */,
 				921E8DBE2AA3362E0025D52E /* UIViewEx.swift in Sources */,
