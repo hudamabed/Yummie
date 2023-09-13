@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HIv-NN-DLl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rxz-bm-ssg">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -331,7 +331,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dXA-fT-KfZ">
-                                <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="693.66666666666663"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBurger" translatesAutoresizingMaskIntoConstraints="NO" id="vtK-jG-Jyk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
@@ -340,7 +340,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7PL-I9-P4G">
-                                        <rect key="frame" x="0.0" y="415" width="375" height="313"/>
+                                        <rect key="frame" x="0.0" y="415" width="375" height="278.66666666666674"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyi-c3-42Y">
                                                 <rect key="frame" x="15" y="0.0" width="345" height="20.333333333333332"/>
@@ -360,20 +360,37 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5as-dP-zKY">
-                                                <rect key="frame" x="15" y="35.333333333333314" width="345" height="142.66666666666666"/>
+                                                <rect key="frame" x="15" y="35.333333333333307" width="345" height="108.33333333333331"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s،Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</string>
+                                                        <string key="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</string>
                                                         <attributes>
                                                             <color key="NSColor" name="BABABA"/>
                                                             <font key="NSFont" metaFont="system"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="،">
+                                                        <attributes>
+                                                            <color key="NSColor" name="BABABA"/>
+                                                            <font key="NSFont" size="13" name=".SFArabic-Regular"/>
+                                                            <font key="NSOriginalFont" metaFont="system"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</string>
+                                                        <attributes>
+                                                            <color key="NSColor" name="BABABA"/>
+                                                            <font key="NSFont" metaFont="system"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bk8-Kj-9YY">
-                                                <rect key="frame" x="15" y="193" width="345" height="45"/>
+                                                <rect key="frame" x="15" y="158.66666666666663" width="345" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="sxk-Hj-xAT"/>
                                                 </constraints>
@@ -381,7 +398,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-2i-LnU">
-                                                <rect key="frame" x="15" y="253" width="345" height="45"/>
+                                                <rect key="frame" x="15" y="218.66666666666663" width="345" height="45"/>
                                                 <color key="backgroundColor" red="0.26666668059999998" green="0.27450981740000002" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="ycB-Pl-AmV"/>
@@ -407,7 +424,6 @@
                             <constraint firstItem="dXA-fT-KfZ" firstAttribute="top" secondItem="d6s-TV-ahL" secondAttribute="top" id="5Ga-kJ-XV2"/>
                             <constraint firstItem="d6s-TV-ahL" firstAttribute="trailing" secondItem="dXA-fT-KfZ" secondAttribute="trailing" id="hQc-Yc-4r8"/>
                             <constraint firstItem="dXA-fT-KfZ" firstAttribute="leading" secondItem="d6s-TV-ahL" secondAttribute="leading" id="qKa-jY-6rv"/>
-                            <constraint firstItem="d6s-TV-ahL" firstAttribute="bottom" secondItem="dXA-fT-KfZ" secondAttribute="bottom" id="z3q-57-zvy"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -8,7 +8,10 @@
 import UIKit
 
 class DishDetailsViewController: UIViewController {
-    
+   // var selectedFoodCategory: FoodCategory?
+    var selectedPopularDishes: PopularDishes?
+    var selectedChefSpecials: ChefSpecials?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()

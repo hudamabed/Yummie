@@ -126,6 +126,19 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             
         }
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       // let selectedFoodCategory = foodCategory[indexPath.row]
+        let selectedPopularDishes = popularDishes[indexPath.row]
+        let selectedChefSpecials = chefSpecials[indexPath.row]
+        let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
+       // vc.selectedFoodCategory = selectedFoodCategory
+        vc.selectedPopularDishes = selectedPopularDishes
+        vc.selectedChefSpecials = selectedChefSpecials
+        
+
+        vc.push()
+
+    }
 }
     
 
