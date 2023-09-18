@@ -8,10 +8,18 @@
 import UIKit
 
 class DishDetailsViewController: UIViewController {
-   // var selectedFoodCategory: FoodCategory?
-    var selectedPopularDishes: PopularDishes?
-    var selectedChefSpecials: ChefSpecials?
-
+    
+    @IBOutlet weak var imgDish: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblCalories: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var textFiled: UITextField!
+    @IBOutlet weak var btnOrder: UIButton!
+    
+    var selectedPopularDishes: PopularDishes!
+    var selectedChefSpecials: ChefSpecials!
+    var isdPopularDishes = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -23,6 +31,7 @@ class DishDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+    
 }
 
 extension DishDetailsViewController {
@@ -33,8 +42,19 @@ extension DishDetailsViewController {
     }
     
     func setupData(){
-    }
-    
+        if isdPopularDishes {
+            lblTitle.text = selectedPopularDishes.name
+            imgDish.kf.setImage(with: selectedPopularDishes.image?.isURl)
+            lblCalories.text = selectedPopularDishes.formattedCalories
+            lblDescription.text = selectedPopularDishes.description
+        } else {
+            lblTitle.text = selectedChefSpecials.name
+            imgDish.kf.setImage(with: selectedChefSpecials.image?.isURl)
+            lblCalories.text = selectedChefSpecials.formattedCalories
+            lblDescription.text = selectedChefSpecials.description
+        }
+}
+
     func fetchData(){
     }
 }

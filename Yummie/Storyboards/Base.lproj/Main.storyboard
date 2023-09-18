@@ -373,7 +373,7 @@
                                                     <fragment content="،">
                                                         <attributes>
                                                             <color key="NSColor" name="BABABA"/>
-                                                            <font key="NSFont" size="13" name=".SFArabic-Regular"/>
+                                                            <font key="NSFont" metaFont="system"/>
                                                             <font key="NSOriginalFont" metaFont="system"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -426,6 +426,14 @@
                             <constraint firstItem="dXA-fT-KfZ" firstAttribute="leading" secondItem="d6s-TV-ahL" secondAttribute="leading" id="qKa-jY-6rv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOrder" destination="R5c-2i-LnU" id="8iB-kX-NxR"/>
+                        <outlet property="imgDish" destination="vtK-jG-Jyk" id="rPv-w4-t8u"/>
+                        <outlet property="lblCalories" destination="jyV-4w-O7u" id="v2B-4n-1ig"/>
+                        <outlet property="lblDescription" destination="5as-dP-zKY" id="mLF-aU-Ilq"/>
+                        <outlet property="lblTitle" destination="ahJ-42-uFz" id="raV-Yv-bUV"/>
+                        <outlet property="textFiled" destination="Bk8-Kj-9YY" id="AXw-Fr-5oq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hga-Sz-aTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

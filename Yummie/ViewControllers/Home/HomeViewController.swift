@@ -61,21 +61,21 @@ extension HomeViewController {
 
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 309))
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
-        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 3089))
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
-        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 309))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 309))
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
         popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
-        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
+        popularDishes.append(PopularDishes(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 303))
         
         chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 309))
-        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
+        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 39))
         chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
-        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
+        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 303))
         chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 309))
-        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 39))
+        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 39))
         chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 3089))
-        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !", calories: 303))
+        chefSpecials.append(ChefSpecials(id: "id1", name: "Checken", image: "https://picsum.photos/200/300", description: "This is the most delisios dish i ever taste !This is the most delisios dish i ever tasteThis is the most delisios dish i ever taste", calories: 303))
         
         
     }
@@ -96,11 +96,11 @@ extension HomeViewController {
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == foodCategoryCollectionView {
-             return foodCategory.count
+            return foodCategory.count
         } else if collectionView == popularDishesCollectionView {
-             return popularDishes.count
+            return popularDishes.count
         } else {
-             return chefSpecials.count
+            return chefSpecials.count
         }
     }
     
@@ -127,19 +127,21 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       // let selectedFoodCategory = foodCategory[indexPath.row]
-        let selectedPopularDishes = popularDishes[indexPath.row]
-        let selectedChefSpecials = chefSpecials[indexPath.row]
-        let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
-       // vc.selectedFoodCategory = selectedFoodCategory
-        vc.selectedPopularDishes = selectedPopularDishes
-        vc.selectedChefSpecials = selectedChefSpecials
-        
-
-        vc.push()
-
+        // let selectedFoodCategory = foodCategory[indexPath.row]
+        if collectionView == popularDishesCollectionView{
+            let selectedPopularDishesRow = popularDishes[indexPath.row]
+            let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
+            vc.selectedPopularDishes = selectedPopularDishesRow
+            vc.push()
+        } else if collectionView == chefSpecialsCollectionView {
+            let selectedChefSpecialsRow = chefSpecials[indexPath.row]
+            let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
+            vc.selectedChefSpecials = selectedChefSpecialsRow
+            vc.push()
+        } else {
+            
+        }
     }
-}
     
-
+}
 
