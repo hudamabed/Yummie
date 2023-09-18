@@ -131,12 +131,12 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         if collectionView == popularDishesCollectionView{
             let selectedPopularDishesRow = popularDishes[indexPath.row]
             let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
-            vc.selectedPopularDishes = selectedPopularDishesRow
+            vc.categoryFood = .selectedPopularDishes(selectedPopularDishesRow)
             vc.push()
         } else if collectionView == chefSpecialsCollectionView {
             let selectedChefSpecialsRow = chefSpecials[indexPath.row]
             let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
-            vc.selectedChefSpecials = selectedChefSpecialsRow
+            vc.categoryFood = .selectedChefSpecials(selectedChefSpecialsRow)
             vc.push()
         } else {
             

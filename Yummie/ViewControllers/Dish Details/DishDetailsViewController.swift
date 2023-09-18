@@ -16,9 +16,15 @@ class DishDetailsViewController: UIViewController {
     @IBOutlet weak var textFiled: UITextField!
     @IBOutlet weak var btnOrder: UIButton!
     
-    var selectedPopularDishes: PopularDishes!
-    var selectedChefSpecials: ChefSpecials!
-    var isdPopularDishes = false
+    enum CategoryFood{
+       case selectedPopularDishes(PopularDishes)
+       case selectedChefSpecials(ChefSpecials)
+    }
+     
+    var categoryFood: CategoryFood?
+//    var selectedPopularDishes: PopularDishes!
+//    var selectedChefSpecials: ChefSpecials!
+//    var isdPopularDishes = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,18 +48,23 @@ extension DishDetailsViewController {
     }
     
     func setupData(){
-        if isdPopularDishes {
+        switch categoryFood{
+        case .selectedChefSpecials(let selectedPopularDishes):
             lblTitle.text = selectedPopularDishes.name
             imgDish.kf.setImage(with: selectedPopularDishes.image?.isURl)
             lblCalories.text = selectedPopularDishes.formattedCalories
             lblDescription.text = selectedPopularDishes.description
-        } else {
+        case .selectedPopularDishes(let selectedChefSpecials):
             lblTitle.text = selectedChefSpecials.name
             imgDish.kf.setImage(with: selectedChefSpecials.image?.isURl)
             lblCalories.text = selectedChefSpecials.formattedCalories
             lblDescription.text = selectedChefSpecials.description
+            
+        case .none:
+            ""
+            
         }
-}
+    }
 
     func fetchData(){
     }
