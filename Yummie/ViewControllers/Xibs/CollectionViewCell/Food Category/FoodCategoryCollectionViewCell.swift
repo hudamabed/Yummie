@@ -23,7 +23,7 @@ class FoodCategoryCollectionViewCell: UICollectionViewCell {
         if let object = self.object as? FoodCategory{
             lblTitle.text = object.foodName
             imageView.image = UIImage(named: object.foodImage ?? "")
-           // imageView.kf.setImage(with: object.foodImage?.isURl)
+            imageView.kf.setImage(with: object.foodImage?.isURl)
              
         }
     }

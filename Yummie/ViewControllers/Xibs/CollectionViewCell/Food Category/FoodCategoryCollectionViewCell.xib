@@ -13,31 +13,40 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCategoryCollectionViewCell" customModule="Yummie" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="162" height="55"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="162" height="55"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbG-oh-yAc">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="55"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LJe-tL-Tuk">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LJe-tL-Tuk">
+                                <rect key="frame" x="0.0" y="0.0" width="162" height="55"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o9G-gQ-Gbh">
-                                        <rect key="frame" x="8" y="8" width="40" height="34"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o9G-gQ-Gbh">
+                                        <rect key="frame" x="8" y="8" width="39" height="39"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="iwh-qx-ivZ"/>
+                                            <constraint firstAttribute="width" secondItem="o9G-gQ-Gbh" secondAttribute="height" multiplier="1:1" id="tpv-xu-K4V"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTH-8J-Yem">
-                                        <rect key="frame" x="53" y="8" width="97" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTH-8J-Yem">
+                                        <rect key="frame" x="55" y="8" width="107" height="39"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                         <color key="textColor" name="3D3C52"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="o9G-gQ-Gbh" firstAttribute="bottom" secondItem="JTH-8J-Yem" secondAttribute="bottom" id="w9l-30-AZv"/>
+                                    <constraint firstItem="o9G-gQ-Gbh" firstAttribute="top" secondItem="JTH-8J-Yem" secondAttribute="top" id="wG4-Wh-A8g"/>
+                                </constraints>
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -57,12 +66,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="LJe-tL-Tuk" secondAttribute="trailing" id="OiD-Tr-2mC"/>
-                            <constraint firstItem="LJe-tL-Tuk" firstAttribute="top" secondItem="YbG-oh-yAc" secondAttribute="top" id="VrB-5p-GTF"/>
-                            <constraint firstItem="LJe-tL-Tuk" firstAttribute="leading" secondItem="YbG-oh-yAc" secondAttribute="leading" id="YIE-68-xvu"/>
-                            <constraint firstAttribute="width" constant="150" id="b3y-ln-7Ez"/>
-                            <constraint firstAttribute="bottom" secondItem="LJe-tL-Tuk" secondAttribute="bottom" id="cMM-x0-lye"/>
-                            <constraint firstAttribute="height" constant="50" id="hKd-Sq-XZQ"/>
+                            <constraint firstItem="LJe-tL-Tuk" firstAttribute="leading" secondItem="YbG-oh-yAc" secondAttribute="leading" id="Dqs-lw-TXr"/>
+                            <constraint firstAttribute="width" constant="162" id="Gv8-TB-byy"/>
+                            <constraint firstAttribute="height" constant="55" id="OJK-xZ-gft"/>
+                            <constraint firstItem="LJe-tL-Tuk" firstAttribute="top" secondItem="YbG-oh-yAc" secondAttribute="top" id="Xf3-js-4fk"/>
+                            <constraint firstAttribute="trailing" secondItem="LJe-tL-Tuk" secondAttribute="trailing" id="Xhj-Z9-ibc"/>
+                            <constraint firstAttribute="bottom" secondItem="LJe-tL-Tuk" secondAttribute="bottom" id="tm4-e1-R5z"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -83,17 +92,17 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="YbG-oh-yAc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EYG-Nm-9hg"/>
-                <constraint firstAttribute="bottom" secondItem="YbG-oh-yAc" secondAttribute="bottom" id="Wrm-c3-ZC3"/>
-                <constraint firstItem="YbG-oh-yAc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bBp-Cg-SKQ"/>
-                <constraint firstAttribute="trailing" secondItem="YbG-oh-yAc" secondAttribute="trailing" id="mM1-8Y-oD8"/>
+                <constraint firstItem="YbG-oh-yAc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CN6-sf-3nL"/>
+                <constraint firstAttribute="trailing" secondItem="YbG-oh-yAc" secondAttribute="trailing" id="QXb-qP-5b5"/>
+                <constraint firstAttribute="bottom" secondItem="YbG-oh-yAc" secondAttribute="bottom" id="eWK-ON-LMn"/>
+                <constraint firstItem="YbG-oh-yAc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mr3-WV-Tuy"/>
             </constraints>
-            <size key="customSize" width="150" height="50"/>
+            <size key="customSize" width="162" height="55"/>
             <connections>
                 <outlet property="imageView" destination="o9G-gQ-Gbh" id="y2a-JU-PFI"/>
                 <outlet property="lblTitle" destination="JTH-8J-Yem" id="dIx-sT-Qg3"/>
             </connections>
-            <point key="canvasLocation" x="68.702290076335871" y="-1.4084507042253522"/>
+            <point key="canvasLocation" x="36.641221374045799" y="-38.380281690140848"/>
         </collectionViewCell>
     </objects>
     <resources>

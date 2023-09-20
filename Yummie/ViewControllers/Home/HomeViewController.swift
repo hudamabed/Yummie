@@ -30,6 +30,11 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+    
+    @IBAction func btnOrders(_ sender: Any) {
+      
+    }
+    
 }
 
 extension HomeViewController {
@@ -126,6 +131,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // let selectedFoodCategory = foodCategory[indexPath.row]
         if collectionView == popularDishesCollectionView{
@@ -139,7 +145,10 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             vc.categoryFood = .selectedChefSpecials(selectedChefSpecialsRow)
             vc.push()
         } else {
-            
+            let selectedFoodCategoryCell = foodCategory[indexPath.row]
+            let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishListViewController") as! DishListViewController
+            vc.selectedFoodCategory = selectedFoodCategoryCell
+            vc.push()
         }
     }
     

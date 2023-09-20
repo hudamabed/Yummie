@@ -19,6 +19,7 @@ class DishDetailsViewController: UIViewController {
     enum CategoryFood{
        case selectedPopularDishes(PopularDishes)
        case selectedChefSpecials(ChefSpecials)
+       case selectedFoodCategory(DishList)
     }
      
     var categoryFood: CategoryFood?
@@ -59,7 +60,10 @@ extension DishDetailsViewController {
             imgDish.kf.setImage(with: selectedChefSpecials.image?.isURl)
             lblCalories.text = selectedChefSpecials.formattedCalories
             lblDescription.text = selectedChefSpecials.description
-            
+        case .selectedFoodCategory(let selectedFoodCategory):
+            lblTitle.text = selectedFoodCategory.foodName
+            imgDish.kf.setImage(with: selectedFoodCategory.image?.isURl)
+            lblDescription.text = selectedFoodCategory.userName
         case .none:
             ""
             

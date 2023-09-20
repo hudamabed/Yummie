@@ -143,17 +143,17 @@
                                                                     <size key="itemSize" width="375" height="145"/>
                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
+                                                                    <inset key="sectionInset" minX="10" minY="0.10000000000000001" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
                                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4lh-Wi-MHO">
-                                                                        <rect key="frame" x="10" y="-2.3333333333333335" width="375" height="145"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="375" height="140.56666666666666"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bag-Vq-sPq">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.56666666666666"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                         </collectionViewCellContentView>
-                                                                        <size key="customSize" width="375" height="145"/>
+                                                                        <size key="customSize" width="375" height="140.56666666666666"/>
                                                                     </collectionViewCell>
                                                                 </cells>
                                                                 <connections>
@@ -308,6 +308,9 @@
                     <navigationItem key="navigationItem" title="Yummie" id="J45-hM-tB0">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.circle.fill" catalog="system" id="oG5-ne-5Yl">
                             <color key="tintColor" name="871932"/>
+                            <connections>
+                                <action selector="btnOrders:" destination="fqJ-tQ-O3I" id="OR3-2N-XAY"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -372,7 +375,7 @@
                                                     <fragment content="،">
                                                         <attributes>
                                                             <color key="NSColor" name="BABABA"/>
-                                                            <font key="NSFont" size="13" name=".SFArabic-Regular"/>
+                                                            <font key="NSFont" metaFont="system"/>
                                                             <font key="NSOriginalFont" metaFont="system"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -437,6 +440,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hga-Sz-aTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3421.5999999999999" y="-18.472906403940886"/>
+        </scene>
+        <!--Food Category-->
+        <scene sceneID="idg-li-LCR">
+            <objects>
+                <viewController storyboardIdentifier="DishListViewController" title="Food Category" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tNV-yk-HKr" customClass="DishListViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gih-z4-R1j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xui-UW-zHi">
+                                <rect key="frame" x="0.0" y="94" width="375" height="684"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g0T-s3-eMi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="684"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="tNV-yk-HKr" id="akY-4x-yc0"/>
+                                            <outlet property="delegate" destination="tNV-yk-HKr" id="oVY-8m-g5w"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Axp-Be-bXZ"/>
+                        <color key="backgroundColor" name="DFDFDF"/>
+                        <constraints>
+                            <constraint firstItem="Axp-Be-bXZ" firstAttribute="bottom" secondItem="xui-UW-zHi" secondAttribute="bottom" id="SlB-uX-c69"/>
+                            <constraint firstItem="xui-UW-zHi" firstAttribute="leading" secondItem="gih-z4-R1j" secondAttribute="leading" id="YB6-3O-EUT"/>
+                            <constraint firstItem="xui-UW-zHi" firstAttribute="top" secondItem="Axp-Be-bXZ" secondAttribute="top" id="YWx-U2-ugx"/>
+                            <constraint firstItem="Axp-Be-bXZ" firstAttribute="trailing" secondItem="xui-UW-zHi" secondAttribute="trailing" id="dYt-hq-ddx"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="g0T-s3-eMi" id="XvP-G1-05T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SQo-Kf-Plh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="748"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="STK-Zp-wcg">
+            <objects>
+                <viewController id="pKf-S3-3bm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pHw-om-kBs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3ey-35-M00"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoR-dk-ChP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3447" y="741"/>
         </scene>
         <!--Main Navigation View Controller-->
         <scene sceneID="ZgS-xv-F0J">
