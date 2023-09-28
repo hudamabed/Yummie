@@ -22,7 +22,9 @@ class DishDetailsViewController: UIViewController {
        case selectedFoodCategory(DishList)
     }
      
+    var order:Orders?
     var categoryFood: CategoryFood?
+    
 //    var selectedPopularDishes: PopularDishes!
 //    var selectedChefSpecials: ChefSpecials!
 //    var isdPopularDishes = true
@@ -68,6 +70,12 @@ extension DishDetailsViewController {
             ""
             
         }
+//        if let object = self.object as? Orders{
+//            lblTitle.text = order.name
+//            imgDish.kf.setImage(with: order.image?.isURl)
+//            lblCalories.text = order.formattedCalories
+//            lblDescription.text = order.description
+//        }
     }
 
     func fetchData(){

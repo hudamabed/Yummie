@@ -40,10 +40,12 @@
 		92821F9A2AA21429000D665D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92821F982AA21429000D665D /* Main.storyboard */; };
 		92821F9C2AA2142B000D665D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92821F9B2AA2142B000D665D /* Assets.xcassets */; };
 		92821F9F2AA2142B000D665D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92821F9D2AA2142B000D665D /* LaunchScreen.storyboard */; };
+		92A13E2A2AC59D390067B653 /* DishOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A13E292AC59D390067B653 /* DishOrdersViewController.swift */; };
+		92A13E2D2AC59F5E0067B653 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A13E2C2AC59F5E0067B653 /* Orders.swift */; };
 		92F484532AA8D8CF009507BD /* PopularDishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F484512AA8D8CF009507BD /* PopularDishesCollectionViewCell.swift */; };
 		92F484542AA8D8CF009507BD /* PopularDishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92F484522AA8D8CF009507BD /* PopularDishesCollectionViewCell.xib */; };
 		92F484582AA8D927009507BD /* ChefsSpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F484562AA8D927009507BD /* ChefsSpecialsCollectionViewCell.swift */; };
-		92F4845B2AA8DBF7009507BD /* Popular Dishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4845A2AA8DBF7009507BD /* Popular Dishes.swift */; };
+		92F4845B2AA8DBF7009507BD /* PopularDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4845A2AA8DBF7009507BD /* PopularDishes.swift */; };
 		92FB58942AA60456001F69D0 /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB58922AA60456001F69D0 /* FoodCategoryCollectionViewCell.swift */; };
 		92FB58952AA60456001F69D0 /* FoodCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FB58932AA60456001F69D0 /* FoodCategoryCollectionViewCell.xib */; };
 		92FB58982AA61E2F001F69D0 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB58972AA61E2F001F69D0 /* FoodCategory.swift */; };
@@ -86,11 +88,13 @@
 		92821F9B2AA2142B000D665D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92821F9E2AA2142B000D665D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92821FA02AA2142B000D665D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A13E292AC59D390067B653 /* DishOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishOrdersViewController.swift; sourceTree = "<group>"; };
+		92A13E2C2AC59F5E0067B653 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 		92F484512AA8D8CF009507BD /* PopularDishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCollectionViewCell.swift; sourceTree = "<group>"; };
 		92F484522AA8D8CF009507BD /* PopularDishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishesCollectionViewCell.xib; sourceTree = "<group>"; };
 		92F484562AA8D927009507BD /* ChefsSpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
 		92F484572AA8D927009507BD /* ChefsSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefsSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
-		92F4845A2AA8DBF7009507BD /* Popular Dishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Popular Dishes.swift"; sourceTree = "<group>"; };
+		92F4845A2AA8DBF7009507BD /* PopularDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishes.swift; sourceTree = "<group>"; };
 		92FB58922AA60456001F69D0 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		92FB58932AA60456001F69D0 /* FoodCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		92FB58972AA61E2F001F69D0 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
@@ -291,6 +295,7 @@
 				921E8DD82AA3BBC10025D52E /* Home */,
 				925329E02AACCFB900D4C479 /* Dish Details */,
 				925CC2612ABB565D00306B95 /* DishList */,
+				92A13E282AC59D170067B653 /* DishOrders */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				92F4845C2AA8DC0B009507BD /* Popular Dishes */,
 				920572FD2AAB7C1D00CF26D6 /* Chef's Specials */,
 				925CC2692ABB5A1A00306B95 /* Dish List */,
+				92A13E272AC59C8D0067B653 /* Dish Orders */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +343,22 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		92A13E272AC59C8D0067B653 /* Dish Orders */ = {
+			isa = PBXGroup;
+			children = (
+				92A13E2C2AC59F5E0067B653 /* Orders.swift */,
+			);
+			path = "Dish Orders";
+			sourceTree = "<group>";
+		};
+		92A13E282AC59D170067B653 /* DishOrders */ = {
+			isa = PBXGroup;
+			children = (
+				92A13E292AC59D390067B653 /* DishOrdersViewController.swift */,
+			);
+			path = DishOrders;
 			sourceTree = "<group>";
 		};
 		92F484502AA8D8B6009507BD /* Popular Dishes */ = {
@@ -360,7 +382,7 @@
 		92F4845C2AA8DC0B009507BD /* Popular Dishes */ = {
 			isa = PBXGroup;
 			children = (
-				92F4845A2AA8DBF7009507BD /* Popular Dishes.swift */,
+				92F4845A2AA8DBF7009507BD /* PopularDishes.swift */,
 			);
 			path = "Popular Dishes";
 			sourceTree = "<group>";
@@ -525,14 +547,16 @@
 				921E8DC92AA3362E0025D52E /* UIKitEx.swift in Sources */,
 				921E8DC12AA3362E0025D52E /* UIViewControllerEx.swift in Sources */,
 				92821F972AA21429000D665D /* OnboardingViewController.swift in Sources */,
+				92A13E2A2AC59D390067B653 /* DishOrdersViewController.swift in Sources */,
 				921E8DC42AA3362E0025D52E /* UITabBarEx.swift in Sources */,
 				921E8DC02AA3362E0025D52E /* UIColorEx.swift in Sources */,
 				92FB58982AA61E2F001F69D0 /* FoodCategory.swift in Sources */,
 				92821F932AA21429000D665D /* AppDelegate.swift in Sources */,
 				921E8DC62AA3362E0025D52E /* UIButtonEx.swift in Sources */,
-				92F4845B2AA8DBF7009507BD /* Popular Dishes.swift in Sources */,
+				92F4845B2AA8DBF7009507BD /* PopularDishes.swift in Sources */,
 				921E8DC22AA3362E0025D52E /* UIResponderEx.swift in Sources */,
 				92821F952AA21429000D665D /* SceneDelegate.swift in Sources */,
+				92A13E2D2AC59F5E0067B653 /* Orders.swift in Sources */,
 				92FB58942AA60456001F69D0 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				925329E22AACCFE800D4C479 /* DishDetailsViewController.swift in Sources */,
 				921E8DC82AA3362E0025D52E /* UIStringEx.swift in Sources */,

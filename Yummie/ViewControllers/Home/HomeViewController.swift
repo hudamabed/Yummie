@@ -32,7 +32,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func btnOrders(_ sender: Any) {
-      
+        let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishOrdersViewController") as! DishOrdersViewController
+        vc.push()
     }
     
 }

@@ -24,15 +24,23 @@ class DishListTableViewCell: UITableViewCell {
 
     }
     
-    func configureCell(){
+    func configureCellList(){
         if let object = self.object as? DishList{
             lblOrder.text = object.foodName
             lblUserName.text = object.userName
             imgFood.image = UIImage(named: object.image ?? "")
             imgFood.kf.setImage(with: object.image?.isURl)
         }
-        
     }
+    func configureCellOrders(){
+        if let object = self.object as? Orders{
+            lblOrder.text = object.dish?.name
+            lblUserName.text = object.name
+            imgFood.image = UIImage(named: object.dish?.image ?? "")
+            imgFood.kf.setImage(with: object.dish?.image?.isURl)
+        }
+    }
+ 
      
     
 }

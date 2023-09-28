@@ -59,7 +59,7 @@ extension DishListViewController: UITableViewDataSource, UITableViewDelegate {
         let cell: DishListTableViewCell = tableView.dequeueReusableCell(withIdentifier: DishListTableViewCell.id, for: indexPath) as! DishListTableViewCell
         let object = dishList[indexPath.row]
         cell.object = object
-        cell.configureCell()
+        cell.configureCellList()
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
