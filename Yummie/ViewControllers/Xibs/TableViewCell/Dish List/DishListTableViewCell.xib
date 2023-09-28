@@ -19,13 +19,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0x0-K9-K68">
-                        <rect key="frame" x="15" y="7" width="208" height="84"/>
+                        <rect key="frame" x="15" y="11" width="208" height="82"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ODE-wO-ovV">
-                                <rect key="frame" x="0.0" y="0.0" width="208" height="84"/>
+                                <rect key="frame" x="0.0" y="0.0" width="208" height="82"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRj-ox-i8w">
-                                        <rect key="frame" x="15" y="22" width="40" height="40"/>
+                                        <rect key="frame" x="15" y="21" width="40" height="40"/>
+                                        <color key="tintColor" red="0.41176474089999998" green="0.75686275960000005" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="BUI-YX-8MB"/>
                                             <constraint firstAttribute="width" secondItem="DRj-ox-i8w" secondAttribute="height" multiplier="1:1" id="LEK-K9-Zm1"/>
@@ -37,7 +38,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Axc-8v-bH7">
-                                        <rect key="frame" x="65" y="22" width="143" height="40"/>
+                                        <rect key="frame" x="65" y="21" width="143" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhJ-kk-tWh">
                                                 <rect key="frame" x="0.0" y="0.0" width="143" height="17.666666666666668"/>
@@ -98,9 +99,9 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="0x0-K9-K68" secondAttribute="bottom" constant="7" id="B14-L3-a2g"/>
+                    <constraint firstAttribute="bottom" secondItem="0x0-K9-K68" secondAttribute="bottom" constant="5" id="B14-L3-a2g"/>
                     <constraint firstItem="0x0-K9-K68" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JDz-9j-Opn"/>
-                    <constraint firstItem="0x0-K9-K68" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="dec-UW-HAJ"/>
+                    <constraint firstItem="0x0-K9-K68" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="dec-UW-HAJ"/>
                     <constraint firstAttribute="trailing" secondItem="0x0-K9-K68" secondAttribute="trailing" constant="15" id="qDE-G1-Xk5"/>
                 </constraints>
             </tableViewCellContentView>

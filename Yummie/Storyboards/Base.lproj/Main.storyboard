@@ -243,11 +243,11 @@
                                                                     <size key="itemSize" width="384" height="60"/>
                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
+                                                                    <inset key="sectionInset" minX="10" minY="1.1000000000000001" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
                                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xPZ-dW-5Ed">
-                                                                        <rect key="frame" x="10" y="0.0" width="384" height="60"/>
+                                                                        <rect key="frame" x="10" y="1" width="384" height="60"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WMA-wK-zUO">
                                                                             <rect key="frame" x="0.0" y="0.0" width="384" height="60"/>
@@ -484,10 +484,10 @@
             </objects>
             <point key="canvasLocation" x="2612" y="748"/>
         </scene>
-        <!--Dish Orders View Controller-->
+        <!--Orders-->
         <scene sceneID="STK-Zp-wcg">
             <objects>
-                <viewController storyboardIdentifier="DishOrdersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pKf-S3-3bm" customClass="DishOrdersViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DishOrdersViewController" title="Orders" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pKf-S3-3bm" customClass="DishOrdersViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pHw-om-kBs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,7 +495,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du8-Yf-ahM">
                                 <rect key="frame" x="0.0" y="50" width="375" height="728"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6v4-I3-YPL">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6v4-I3-YPL">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="728"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -528,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FoR-dk-ChP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3447" y="741"/>
+            <point key="canvasLocation" x="3442" y="748"/>
         </scene>
         <!--Main Navigation View Controller-->
         <scene sceneID="ZgS-xv-F0J">

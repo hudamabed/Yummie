@@ -61,7 +61,7 @@ extension DishOrdersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedFoodCategoryCell = dishOrders[indexPath.row]
         let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
-        vc.order = selectedFoodCategory
+        vc.order = selectedFoodCategoryCell
         vc.push()
     }
 }
