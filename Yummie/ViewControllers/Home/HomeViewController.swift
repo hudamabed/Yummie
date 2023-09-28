@@ -45,6 +45,7 @@ extension HomeViewController {
 
         
         foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
+        
         foodCategory.append(FoodCategory(id: "id2", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
         foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
         foodCategory.append(FoodCategory(id: "id1", foodImage: "https://picsum.photos/200/300", foodName: "pizza"))
